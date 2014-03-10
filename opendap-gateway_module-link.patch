@@ -1,0 +1,11 @@
+--- gateway_module-1.1.1/Makefile.am.orig	2013-09-12 00:26:47.000000000 +0200
++++ gateway_module-1.1.1/Makefile.am	2014-03-10 14:32:59.938373140 +0100
+@@ -30,7 +30,7 @@
+ libgateway_module_la_SOURCES = $(GATEWAY_SRCS) $(GATEWAY_HDRS)
+ libgateway_module_la_CPPFLAGS = $(BES_CPPFLAGS)
+ libgateway_module_la_LDFLAGS = -avoid-version -module 
+-libgateway_module_la_LIBADD = $(BES_DAP_LIBS)
++libgateway_module_la_LIBADD = $(BES_DAP_LIBS) -ldapclient -lcurl
+ 
+ EXTRA_PROGRAMS = 
+ 
