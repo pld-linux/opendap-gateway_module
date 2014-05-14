@@ -5,26 +5,26 @@
 Summary:	Gateway module for the OPeNDAP data server
 Summary(pl.UTF-8):	Moduł bramki dla serwera danych OPeNDAP
 Name:		opendap-gateway_module
-Version:	1.1.1
+Version:	1.1.2
 Release:	1
 License:	LGPL v2.1+
 Group:		Daemons
 Source0:	http://www.opendap.org/pub/source/gateway_module-%{version}.tar.gz
-# Source0-md5:	ab84958865ad4c6f6d12aa58186231c1
+# Source0-md5:	bf91212327e59bbd7eeb168b4cfb818a
 Patch0:		%{name}-includes.patch
 Patch1:		%{name}-link.patch
 URL:		http://opendap.org/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.10
-%{?with_tests:BuildRequires:	bes >= 3.9.0}
-BuildRequires:	bes-devel >= 3.9.0
+%{?with_tests:BuildRequires:	bes >= 3.13.0}
+BuildRequires:	bes-devel >= 3.13.0
 BuildRequires:	curl-devel
-BuildRequires:	libdap-devel >= 3.11.0
+BuildRequires:	libdap-devel >= 3.13.0
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool >= 2:1.5
 BuildRequires:	pkgconfig
-Requires:	bes >= 3.9.0
-Requires:	libdap >= 3.11.0
+Requires:	bes >= 3.13.0
+Requires:	libdap >= 3.13.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
