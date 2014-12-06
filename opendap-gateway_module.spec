@@ -6,11 +6,11 @@ Summary:	Gateway module for the OPeNDAP data server
 Summary(pl.UTF-8):	Moduł bramki dla serwera danych OPeNDAP
 Name:		opendap-gateway_module
 Version:	1.1.2
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Daemons
 Source0:	http://www.opendap.org/pub/source/gateway_module-%{version}.tar.gz
-# Source0-md5:	bf91212327e59bbd7eeb168b4cfb818a
+# Source0-md5:	b2cf29accb7d0b35a90bbd1773837ba1
 Patch0:		%{name}-includes.patch
 Patch1:		%{name}-link.patch
 URL:		http://opendap.org/
